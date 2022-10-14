@@ -180,6 +180,7 @@ hero section after navbar
     background-image: url('../service.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position :center;
 }
 
 .pricing h1 {
@@ -229,15 +230,15 @@ final returns
 
 
 .detail h2 {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     margin: 1rem 0;
-    height: 200px;
+    height: 150px;
 }
 
 .detail p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-top: 2rem;
-    line-height: 1.7rem;
+    line-height: 1.5rem;
     font-weight: 500;
 }
 
@@ -246,12 +247,12 @@ final returns
     margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 1.5rem;
     justify-content: center;
 }
 
 .detail h1 {
-    font-size: 3rem;
+    font-size: 2.7rem;
     background-color: rgb(226, 238, 253);
     display: inline;
     border-radius: 1.5rem/1rem;
@@ -262,7 +263,7 @@ final returns
 }
 
 .details .detail {
-    width: 300px;
+    width: 250px;
     text-align: center;
     padding: 0 1rem;
     border-radius: 1rem;
@@ -272,7 +273,7 @@ final returns
     padding-bottom: 2rem;
 }
 .detail .price sup{
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-right: .3rem;
 }
 
