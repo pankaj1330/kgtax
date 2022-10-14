@@ -23,105 +23,154 @@
 
 <body>
     <!-- <section class="max-site-width"> -->
-        <!-- navbar  -->
-        <section class="navigation-bar">
-            <nav class="navbar">
-                <div class="logo">
-                    <h2>KG<span style="color: #ff9933;">TAX</span></h2>
-                </div>
-                <ul class="navlist" id="nav">
-                    <i class="fa-solid fa-xmark" onclick="hide()"></i>
-                    <li class="navitem"> <a href="#">Home</a> </li>
-                    <li class="navitem"> <a href="#">Registrations</a> </li>
-                    <li class="navitem"> <a href="#">DSC Class-3(Digital Signature)</a> </li>
-                    <li class="navitem"> <a href="#">Income Tax</a> </li>
-                    <li class="navitem"> <a href="#">Goods and Services Tax</a> </li>
-                    <li class="navitem"> <a href="#">Other Services</a> </li>
-                    <li class="navitem" id="number"> 
-                        <a href="tel:+919999761170"><i class="fa-solid fa-phone"></i> 9999761170 </a> <br>
-                        <a href="tel:+917500451146"><i class="fa-solid fa-phone"></i> 7500451146</a>
-                    </li>
-                </ul>
-            </nav>
-            <i class="fa-solid fa-bars" onclick="menubar()"></i>
-        </section>
-        <a href="https://wa.me/919999761170" id="whatsapp" target="_blank"><i
-                class="fa-brands fa-square-whatsapp"></i></i></a>
-
-
-        <!-- hero section after navbar  -->
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Welcome to</h1>
-                <h1>KG<span style="color: #ff9933;">TAX</span></h1>
+    <!-- navbar  -->
+    <section class="navigation-bar">
+        <nav class="navbar">
+            <div class="logo">
+                <h2>KG<span style="color: #ff9933;">TAX</span></h2>
             </div>
-            <div class="video">
-                <iframe width="410" height="230" src="https://www.youtube.com/embed/8u-OG6N2rkg"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+            <ul class="navlist" id="nav">
+                <i class="fa-solid fa-xmark" onclick="hide()"></i>
+                <li class="navitem"> <a href="#">Home</a> </li>
+                <li class="navitem"> <a href="#">Registrations</a> </li>
+                <li class="navitem"> <a href="#">DSC Class-3(Digital Signature)</a> </li>
+                <li class="navitem"> <a href="#">Income Tax</a> </li>
+                <li class="navitem"> <a href="#">Goods and Services Tax</a> </li>
+                <li class="navitem"> <a href="#">Other Services</a> </li>
+                <li class="navitem" id="number">
+                    <a href="tel:+919999761170"><i class="fa-solid fa-phone"></i> 9999761170 </a> <br>
+                    <a href="tel:+917500451146"><i class="fa-solid fa-phone"></i> 7500451146</a>
+                </li>
+            </ul>
+        </nav>
+        <i class="fa-solid fa-bars" onclick="menubar()"></i>
+    </section>
+    <a href="https://wa.me/919999761170" id="whatsapp" target="_blank"><i
+            class="fa-brands fa-square-whatsapp"></i></i></a>
+
+
+    <!-- hero section after navbar  -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to</h1>
+            <h1>KG<span style="color: #ff9933;">TAX</span></h1>
+        </div>
+        <div class="video">
+            <iframe width="400" height="200" src="https://www.youtube.com/embed/8u-OG6N2rkg"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <div class="hero-content2">
+            <p>
+            <h2>KG<span style="color: #ff9933;">TAX</span></h2> is India's one of the best Legal services
+            platform dedicated to helping Entrepreneurs easily start and grow their business, at reasonable cost. we
+            are providing Legal and Taxation services since 2011.</p>
+        </div>
+    </section>
+
+    <h1 id="heading">We already provided more than 50000 services since incorporation</h1>
+
+
+
+    <!-- services and pricing section -->
+    <section class="pricing">
+        <h1>Services at a Glance</h1>
+        <div class="options">
+            <button class="registeration tabs" type="button" onclick="registeration()">Registrations</button>
+            <button class="dsc-sign tabs" type="button" onclick="dsc()">DSC Class-3(Digital signature)</button>
+            <button class="income-tax tabs" type="button" onclick="incometax()">Income Tax Returns</button>
+            <button class="services-tax tabs" type="button" onclick="servicetax()">Goods and Services Tax</button>
+        </div>
+        <div class="details">
+            <!-- content displayed dynamically -->
+        </div>
+    </section>
+
+
+    <!-- why we / why our customers loves us -->
+
+    <section class="why-we">
+        <h1>Why Our Customers Love Us</h1>
+        <div class="why-count">
+            <div class="why">
+                <i class="fa-solid fa-piggy-bank"></i>
+                <h3>Affordable</h3>
+                <p>Our dedicated experts provide the best in class services at the most affordable rates</p>
             </div>
-            <div class="hero-content2">
-                <p>
-                <h2>KG<span style="color: #ff9933;">TAX</span></h2> is India's one of the best Legal services
-                platform dedicated to helping Entrepreneurs easily start and grow their business, at reasonable cost. we
-                are providing Legal and Taxation services since 2011.</p>
+            <div class="why">
+                <i class="fa-regular fa-clock"></i>
+                <h3>Ontime</h3>
+                <p>We take precautionary measures to ensure that our clients never miss a single deadline</p>
             </div>
-        </section>
-
-        <h1 id="heading">We already provided more than 50000 services since incorporation</h1>
-
-
-
-        <!-- services and pricing section -->
-        <section class="pricing">
-            <h1>Services at a Glance</h1>
-            <div class="options">
-                <button class="registeration tabs" type="button" onclick="registeration()">Registrations</button>
-                <button class="dsc-sign tabs" type="button" onclick="dsc()">DSC Class-3(Digital signature)</button>
-                <button class="income-tax tabs" type="button" onclick="incometax()">Income Tax Returns</button>
-                <button class="services-tax tabs" type="button" onclick="servicetax()">Goods and Services Tax</button>
+            <div class="why">
+                <i class="fa-solid fa-gavel"></i>
+                <h3>Compliance ensured</h3>
+                <p>We ensure that our client always stays compliant with all applicable laws and regulations</p>
             </div>
-            <div class="details">
-                <!-- content displayed dynamically -->
+            <div class="why">
+                <i class="fa-regular fa-comment-dots"></i>
+                <h3>Instance responce</h3>
+                <p>Get instant responses to all your queries within a few minutes</p>
             </div>
-        </section>
+            <div class="why">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                <h3>Simplified Process</h3>
+                <p>Our process is extremely simplified because our dedicated experts handhold you throughout each
+                    process </p>
+            </div>
+        </div>
+    </section>
+    </section>
 
 
-        <!-- why we / why our customers loves us -->
+    <!-- all bussiness needs -->
 
-        <section class="why-we">
-            <h1>Why Our Customers Love Us</h1>
-            <div class="why-count">
-                <div class="why">
-                    <i class="fa-solid fa-piggy-bank"></i>
-                    <h3>Affordable</h3>
-                    <p>Our dedicated experts provide the best in class services at the most affordable rates</p>
-                </div>
-                <div class="why">
-                    <i class="fa-regular fa-clock"></i>
-                    <h3>Ontime</h3>
-                    <p>We take precautionary measures to ensure that our clients never miss a single deadline</p>
-                </div>
-                <div class="why">
-                    <i class="fa-solid fa-gavel"></i>
-                    <h3>Compliance ensured</h3>
-                    <p>We ensure that our client always stays compliant with all applicable laws and regulations</p>
-                </div>
-                <div class="why">
-                    <i class="fa-regular fa-comment-dots"></i>
-                    <h3>Instance responce</h3>
-                    <p>Get instant responses to all your queries within a few minutes</p>
-                </div>
-                <div class="why">
-                    <i class="fa-solid fa-right-to-bracket"></i>
-                    <h3>Simplified Process</h3>
-                    <p>Our process is extremely simplified because our dedicated experts handhold you throughout each process </p>
-                </div>
+    <section class="needs-width-cover">
+        <h1>One Stop For All Business Needs</h1>
+        <section class="needs">
+            <div class="need">
+                <i class="fa-regular fa-money-bill-1" style="background-color:rgb(102, 67, 214)"></i>
+                <h1>MUTUAL FUNDS</h1>
+            </div>
+            <div class="need">
+                <i class="fa-regular fa-file-lines" style="background-color:orangered"></i>
+                <h1>GST REGISTRATION</h1>
+            </div>
+            <div class="need">
+                <i class="fa-solid fa-building" style="background-color:rgb(94, 98, 232)"></i>
+                <h1>COMPANY REGISTRATION</h1>
+            </div>
+            <div class="need">
+                <i class="fa-solid fa-trademark" style="background-color:green"></i>
+                <h1>TRADEMARK REGISTRATION</h1>
+            </div>
+            <div class="need">
+                <i class="fa-solid fa-utensils" style="background-color:rgb(231, 76, 19)"></i>
+                <h1>FSSAI FOOD LICENSE</h1>
+            </div>
+            <div class="need">
+                <i class="fa-solid fa-download" style="background-color:rgb(60, 60, 192)"></i>
+                <h1>IMPORT EXPORT CODE</h1>
+            </div>
+            <div class="need">
+                <i class="fa-solid fa-file-excel" style="background-color:blue"></i>
+                <h1>GST RETURN</h1>
+            </div>
+            <div class="need">
+                <i class="fa-regular fa-pen-to-square" style="background-color:rgb(122, 183, 30)"></i>
+                <h1>TDS RETURN</h1>
+            </div>
+            <div class="need">
+                <i class="fa-solid fa-indian-rupee-sign" style="background-color:orange"></i>
+                <h1>INCOME TAX RETURN</h1>
+            </div>
+            <div class="need">
+                <i class="fa-regular fa-building" style="background-color:red"></i>
+                <h1>MSME/SSI REGISTRATION</h1>
             </div>
         </section>
     </section>
-
 
 
     <!-- footer  -->
@@ -153,10 +202,10 @@
             </div>
 
         </footer>
-    <!-- </section> -->
+        <!-- </section> -->
 
-    <!-- javascript link -->
-    <script src="index.js"></script>
+        <!-- javascript link -->
+        <script src="index.js"></script>
 </body>
 
 </html>
