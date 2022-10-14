@@ -370,7 +370,68 @@ why our customer loves us
 }
 
 
-
+/* needs section  */
+.needs{
+    /* background-color:black; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10rem;
+    row-gap: 4rem;
+    align-items: center;
+    justify-content: space-around;
+    padding: 4rem .5rem;
+    max-width: 1200px;
+    margin: auto;
+}
+.need{
+    text-align: center;
+    /* background-color: black; */
+    width: 15%;
+    color: white;
+    /* background-color: rebeccapurple; */
+}
+.needs .need i{
+    font-size: 3rem;
+    padding: .5rem;
+    background-color: blue;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* color: black; */
+    margin: auto;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: all 1s;
+}
+.need h1{
+    font-weight: lighter;
+    color: black;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.needs .need i:hover{
+    box-shadow: 5px 5px 10px rgb(45, 45, 45);
+    transform: translateY(-.5rem);
+    transition: all 1s;
+}
+.needs-width-cover>h1{
+    text-align: center;
+    font-size: 2.4rem;
+    padding-top: 1.5rem;
+    color: rgb(12, 12, 186);
+    margin-bottom: 1rem;
+}
+.needs-width-cover{
+    margin-top: 4rem;
+    background-image: url('../laptop.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position :center;
+    padding: 0rem .5rem;
+}
 
 
 /*------------------------
@@ -439,6 +500,18 @@ media queries for smaller screen size
     .navbar {
         letter-spacing: normal;
     }
+    .needs .need i{
+        font-size: 2.8rem;
+        padding: .5rem;
+        height: 80px;
+        width: 80px;
+    }
+    .needs{
+        gap: 5rem;
+    }
+    .need h1{
+        font-size: 1rem;
+    }
 }
 
 @media only screen and (max-width:1000px) {
@@ -466,6 +539,15 @@ media queries for smaller screen size
 
     .hero .hero-content h1 {
         font-size: 2.5rem;
+    }
+    .needs .need i{
+        font-size: 2.4rem;
+        padding: .5rem;
+        height: 60px;
+        width: 60px;
+    }
+    .need{
+        width: 20%;
     }
 }
 
@@ -504,6 +586,35 @@ media queries for smaller screen size
 
     .contact h2 {
         margin-top: 1.5rem;
+    }
+    .hero .hero-content h1 {
+        font-size: 2rem;
+    }
+    .needs .need i{
+        font-size: 1.8rem;
+        padding: .5rem;
+        height: 50px;
+        width: 50px;
+    }
+    .need{
+        width: 90px;
+    }
+    .need h1{
+        font-size: 1rem;
+    }
+    .needs{
+        gap: 1rem;
+    }
+}
+@media only screen and (max-width:360px){
+    .needs .need i{
+        font-size: 1.5rem;
+        padding: .5rem;
+        height: 40px;
+        width: 40px;
+    }
+    .need{
+        width: 60px;
     }
 }
 
