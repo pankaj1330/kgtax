@@ -252,11 +252,12 @@ final returns
     margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
-    /* gap: 1.5rem; */
-    /* justify-content: center; */
+    gap: 1.5rem;
+    justify-content: center;
+    text-align: center;
 
 
-    justify-content: space-between;
+    /* justify-content: space-between; */
     max-width: 1100px;
 }
 
