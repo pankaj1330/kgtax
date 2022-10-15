@@ -174,9 +174,13 @@ hero section after navbar
  Services at a glance section or PRICING SECTION
 ------------------------ */
 
+#pricing-heading{
+    font-size: 2.5rem;
+    text-align: center;
+}
 
 .pricing {
-    margin-top: 4rem;
+    margin-top: 3rem;
     padding: 2rem .5rem;
     
     background-image: url('../service.jpeg');
@@ -190,12 +194,6 @@ hero section after navbar
     text-align: center;
 }
 
-.pricing>h1 {
-    color: rgb(6, 6, 75);
-    font-size: 2.4rem;
-    text-align: center;
-}
-
 .pricing .options {
     margin-top: 2rem;
     text-align: center;
@@ -203,15 +201,16 @@ hero section after navbar
 
 
 .tabs {
-    font-size: 1rem;
+    font-size: 1.2rem;
     border: none;
     background-color: white;
     padding: .3rem .8rem;
     margin: 0 1rem;
     cursor: pointer;
-    border: 1px solid orangered;
+    /* border: 1px solid orangered; */
     border-radius: 10px;
-    font-weight: 500;
+    /* font-weight: 500; */
+    font-weight: 600;
 }
 
 .tabs:hover {
@@ -381,6 +380,13 @@ why our customer loves us
 
 
 /* needs section  */
+
+#needs-heading{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 3rem;
+}
+
 .needs{
     /* background-color:black; */
     display: flex;
@@ -428,15 +434,8 @@ why our customer loves us
     transform: translateY(-.5rem);
     transition: all 1s;
 }
-.needs-width-cover>h1{
-    text-align: center;
-    font-size: 2.4rem;
-    padding-top: 1.5rem;
-    color: rgb(12, 12, 186);
-    margin-bottom: 1rem;
-}
 .needs-width-cover{
-    margin-top: 4rem;
+    margin-top: 3rem;
     background-image: url('../laptop.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
