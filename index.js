@@ -17,26 +17,26 @@ function hide() {
 //dynamic content -- of price section 
 const details = [
     {
-        inside: "Registeration",
-        title: "TRADEMARK <br> Registeration",
+        inside: "Registration",
+        title: "TRADEMARK <br> Registration",
         price: "<sup>&#8377</sup>499",
         disc: "The symbols ™ (the trademark symbol) and ® (the registered trademark symbol) can be used to indicate trademarks. Register your trademark within budget from KG TAX CONSULTANTS to get the best service."
     },
     {
-        inside: "Registeration",
-        title: "IMPORT EXPORT CODE <br> Registeration",
+        inside: "Registration",
+        title: "IMPORT EXPORT CODE <br> Registration",
         price: "<sup>&#8377</sup>499",
         disc: "IEC is a mandatory requirement for Export and Import of Goods and Services. Apply  IEC Certificate Online Now. Hassle Free Process, Instant Solution."
     },
     {
-        inside: "Registeration",
-        title: "AD CODE <br> Registeration",
+        inside: "Registration",
+        title: "AD CODE <br> Registration",
         price: "<sup>&#8377</sup>999",
         disc: "An AD Code is a 14-digit code, which is given by the bank where the Exporter maintains a business current account. This code, printed with the bank letterhead, can be obtained after the Exporter has registered for an Import Export Code (IEC) by the Director General of Foreign Trade (DGFT)."
     },
     {
-        inside: "Registeration",
-        title: "FSSAI <br> Registeration",
+        inside: "Registration",
+        title: "FSSAI <br> Registration",
         price: "<sup>&#8377</sup>499",
         disc: "FSSAI Registration ensures the security of Food products and it is essentially a Food Safety certificate circulated by the food authority in India. Apply for your Fssai Registration at affordable price."
     },
@@ -118,7 +118,7 @@ const details = [
 
 window.addEventListener('DOMContentLoaded', () => {
     let displayDetails = details.map(function (item) {
-        if (item.inside == "Registeration") {
+        if (item.inside == "Registration") {
             return `<div class="detail" id="detail4">
          <h2 class="title">${item.title}</h2>
          <h1 class="price">${item.price}</h1>
@@ -129,9 +129,9 @@ window.addEventListener('DOMContentLoaded', () => {
     displayDetails = displayDetails.join("");
     detail.innerHTML = displayDetails;
 });
-function registeration(){
+function registration(){
     let displayDetails = details.map(function (item) {
-        if (item.inside == "Registeration") {
+        if (item.inside == "Registration") {
             return `<div class="detail" id="detail4">
          <h2 class="title">${item.title}</h2>
          <h1 class="price">${item.price}</h1>
