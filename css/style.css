@@ -42,7 +42,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     animation: slideshow 30s linear infinite;
-    animation-timing-function: ease;
 }
 
 .slide-show:hover .slide-items{
