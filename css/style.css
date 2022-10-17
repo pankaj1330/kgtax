@@ -26,6 +26,55 @@ body {
 }
 
 
+/* slide show  */
+
+.slide-show{
+    height: 280px;
+    width: 460px;
+    cursor: pointer;
+}
+.slide-items{
+    /* background-color: red; */
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/slide1.jpeg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: slideshow 30s linear infinite;
+    animation-timing-function: ease;
+}
+
+.slide-show:hover .slide-items{
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+@keyframes slideshow{
+    0% ,7%{
+        background-image: url('../images/slide1.jpeg');
+    }
+    15%,21%{
+        background-image: url('../images/slide2.jpeg');
+    }
+    30%,35%{
+        background-image: url('../images/slide3.jpeg');
+    }
+    45%,49%{
+        background-image: url('../images/slide4.jpeg');
+    }
+    60%,63%{
+        background-image: url('../images/slide5.jpeg');
+    }
+    75%,77%{
+        background-image: url('../images/slide6.jpeg');
+    }
+    90%,100%{
+        background-image: url('../images/slide7.jpeg');
+    }
+}
+
+/* end of slide show  */
 
 /* ---------------------- 
 navbar design 
@@ -159,6 +208,7 @@ hero section after navbar
     font-size: 2.1rem;
     text-align: center;
     margin: 5rem 0;
+    margin-bottom: 3rem;
 }
 
 /*--------------
@@ -175,15 +225,16 @@ hero section after navbar
 ------------------------ */
 
 #pricing-heading{
-    font-size: 2.5rem;
+    font-size: 3.2rem;
     text-align: center;
+    margin-top: 2rem;
 }
 
 .pricing {
     margin-top: 3rem;
     padding: 2rem .5rem;
     
-    background-image: url('../service.jpeg');
+    background-image: url('../images/service.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position :center;
@@ -197,6 +248,10 @@ hero section after navbar
 .pricing .options {
     margin-top: 2rem;
     text-align: center;
+}
+
+.disc{
+    text-align: justify;
 }
 
 
@@ -268,7 +323,7 @@ final returns
     padding: 0rem 1.3rem;
     font-weight: bold;
     font-weight: 600;
-    color: rgb(0, 60, 128);
+    color: black;
 }
 
 .details .detail {
@@ -436,7 +491,7 @@ why our customer loves us
 }
 .needs-width-cover{
     margin-top: 3rem;
-    background-image: url('../laptop.jpeg');
+    background-image: url('../images/laptop.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position :center;
@@ -529,6 +584,11 @@ media queries for smaller screen size
         align-items: flex-start;
     }
 
+    .slide-show{
+        height: 200px;
+        width: 380px;
+    }
+
     .fa-bars,
     .fa-xmark {
         visibility: visible;
@@ -586,7 +646,7 @@ media queries for smaller screen size
         margin-top: 1.5rem;
     }
     .hero .hero-content h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
     .needs .need i{
         font-size: 1.8rem;
@@ -603,6 +663,11 @@ media queries for smaller screen size
     .needs{
         gap: 1rem;
     }
+    .slide-show{
+        margin-top: 1rem;
+        width: 80vw;
+        height: 200px;
+    }
 }
 @media only screen and (max-width:360px){
     .needs .need i{
@@ -613,6 +678,9 @@ media queries for smaller screen size
     }
     .need{
         width: 60px;
+    }
+    .hero .hero-content h1{
+        font-size: 1.8rem;
     }
 }
 
