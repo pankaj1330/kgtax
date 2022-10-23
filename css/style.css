@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    background-color: rgb(255, 255, 251);
+    background-color: rgb(255, 255, 247);
     min-height: 100vh;
     color: #252525;
 }
@@ -42,6 +42,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     animation: slideshow 30s linear infinite;
+    /* animation-timing-function: ease; */
 }
 
 .slide-show:hover .slide-items{
@@ -518,6 +519,44 @@ why our customer loves us
 
 
 
+/*-------------------
+registration page styling
+-------------------- */
+
+.registration-page{
+    padding: 0 .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 9rem;
+    max-width: 1800px;
+}
+.registration-list{
+    max-width: 25%;
+    text-align: center;
+    color: blue;
+    background-color: rgb(255, 255, 255);
+}
+.registration-list img{
+    width: 100%;
+    height: 230px;
+}
+.registration-list .reg-price{
+    font-size: 2.2rem;
+    color: red;
+    /* text-align: center; */
+    margin: 2rem 0;
+}
+.registration-list h1{
+    margin: 1.2rem 0;
+    padding: 0 .4rem;
+    text-align: justify;
+}
+
+
+
 
 /*--------------------------------
 media queries for smaller screen size 
@@ -582,16 +621,16 @@ media queries for smaller screen size
         overflow: scroll;
         align-items: flex-start;
     }
-
+    
     .slide-show{
         height: 200px;
         width: 380px;
     }
-
+    
     .fa-bars,
     .fa-xmark {
         visibility: visible;
-
+        
     }
 
     .hero .hero-content h1 {
@@ -605,6 +644,21 @@ media queries for smaller screen size
     }
     .need{
         width: 20%;
+    }
+    .registration-list img{
+        height: 160px;
+    }
+}
+
+@media only screen and (max-width:800px){
+    .registration-list img{
+        height: 130px;
+    }
+    .registration-page{
+        font-size: .8rem;
+    }
+    .registration-list .reg-price{
+        font-size: 1.8rem;
     }
 }
 
@@ -621,13 +675,19 @@ media queries for smaller screen size
         margin-bottom: 1rem;
     }
 
-    .hero .video iframe {
+    .hero .slide-show{
         width: 90vw;
         max-height: 180px;
     }
 
     .footer {
         font-size: .8rem;
+    }
+    .registration-page{
+        gap: 1rem;
+    }
+    .registration-list{
+        max-width: 40%;
     }
 }
 
@@ -668,6 +728,23 @@ media queries for smaller screen size
         height: 200px;
     }
 }
+
+@media only screen and (max-width:450px){
+    .registration-list{
+        max-width: 70%;
+    }
+    .registration-list img{
+        height: 200px;
+    }
+    .registration-list{
+        font-size: .8rem;
+    }
+    .registration-list .reg-price{
+        font-size: 1.5rem;
+    }
+}
+
+
 @media only screen and (max-width:360px){
     .needs .need i{
         font-size: 1.5rem;
@@ -681,5 +758,14 @@ media queries for smaller screen size
     .hero .hero-content h1{
         font-size: 1.8rem;
     }
+    .registration-list{
+        max-width: 90%;
+        font-size: .8rem;
+    }
+    /* .registration-list .reg-price{
+        font-size: 1.3rem;
+    } */
+    .registration-list img{
+        height: 150px;
+    }
 }
-
