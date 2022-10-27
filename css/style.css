@@ -19,14 +19,10 @@ body {
 }
 
 
-/* max width of website  */
-.max-site-width {
-    max-width: 1800px;
-    margin: auto;
-}
 
-
-/* slide show  */
+/* -------------
+slide show
+-----------------  */
 
 .slide-show{
     height: 280px;
@@ -34,7 +30,6 @@ body {
     cursor: pointer;
 }
 .slide-items{
-    /* background-color: red; */
     height: 100%;
     width: 100%;
     background-image: url('../images/slide1.jpeg');
@@ -42,7 +37,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     animation: slideshow 30s linear infinite;
-    /* animation-timing-function: ease; */
 }
 
 .slide-show:hover .slide-items{
@@ -90,11 +84,11 @@ for big screen
     border-bottom: 2px solid grey;
     position: fixed;
     width: 100%;
-    /* max-width: 1800px; */
     padding: .3rem 2rem;
     background-color: white;
     top: 0;
     font-weight: bold;
+    z-index: 2;
 }
 
 .navbar {
@@ -179,7 +173,6 @@ hero section after navbar
     margin: auto;
     margin-top: 10rem;
     min-height: 40vh;
-    /* max-height: 1000px; */
 }
 
 .hero h1:nth-child(1) {
@@ -262,9 +255,7 @@ hero section after navbar
     padding: .3rem .8rem;
     margin: 0 1rem;
     cursor: pointer;
-    /* border: 1px solid orangered; */
     border-radius: 10px;
-    /* font-weight: 500; */
     font-weight: 600;
 }
 
@@ -301,17 +292,12 @@ final returns
 
 .details {
     margin: auto;
-
-
     margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
     justify-content: center;
     text-align: center;
-
-
-    /* justify-content: space-between; */
     max-width: 1100px;
 }
 
@@ -434,7 +420,9 @@ why our customer loves us
 }
 
 
-/* needs section  */
+/*-------------------
+ needs section
+--------------------- */
 
 #needs-heading{
     text-align: center;
@@ -443,7 +431,6 @@ why our customer loves us
 }
 
 .needs{
-    /* background-color:black; */
     display: flex;
     flex-wrap: wrap;
     gap: 5rem;
@@ -456,11 +443,9 @@ why our customer loves us
 }
 .need{
     text-align: center;
-    /* background-color: black; */
     width: 15%;
     color: white;
     height: 12rem;
-    /* background-color: rebeccapurple; */
 }
 .needs .need i{
     font-size: 2.2rem;
@@ -472,7 +457,6 @@ why our customer loves us
     display: flex;
     align-items: center;
     justify-content: center;
-    /* color: black; */
     margin: auto;
     margin-bottom: 1rem;
     cursor: pointer;
@@ -509,10 +493,10 @@ why our customer loves us
     position: fixed;
     bottom: 2rem;
     right: 2rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: white;
     background-color: green;
-    padding: 0.1rem .3rem;
+    padding: 0rem .4rem;
     border-radius: .4rem;
     z-index: 2;
 }
@@ -523,30 +507,54 @@ why our customer loves us
 registration page styling
 -------------------- */
 
+
 .registration-page{
-    padding: 0 .5rem;
     display: flex;
-    flex-wrap: wrap;
-    gap: 3rem;
-    justify-content: space-around;
+    padding: 0 .5rem;
     margin: auto;
     margin-top: 9rem;
     max-width: 1800px;
 }
+.registration-page-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+}
+/*
+.registration-page-videos{
+    display: inline-block;
+    z-index: 1;
+}
+.registration-sticky-container{
+    position: sticky;
+    top: 9rem;
+} */
 .registration-list{
-    max-width: 25%;
+    max-width: 22%;
     text-align: center;
     color: blue;
     background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0 0 2px grey;
 }
 .registration-list img{
     width: 100%;
     height: 230px;
+    /* border: none; */
+}
+.registration-list iframe{
+    border: none;
+    width: 100%;
+}
+.reg-video{
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
 }
 .registration-list .reg-price{
-    font-size: 2.2rem;
+    font-size: 2rem;
     color: red;
-    /* text-align: center; */
     margin: 2rem 0;
 }
 .registration-list h1{
@@ -554,8 +562,11 @@ registration page styling
     padding: 0 .4rem;
     text-align: justify;
 }
-
-
+/* .registration-sticky-container iframe{
+    width: 260px;
+    height: 120px;
+    border: none;
+} */
 
 
 /*--------------------------------
@@ -645,13 +656,17 @@ media queries for smaller screen size
     .need{
         width: 20%;
     }
-    .registration-list img{
+    /* .registration-list img{
         height: 160px;
     }
+    .registration-sticky-container iframe{
+        width: 200px;
+        height: 110px;
+    } */
 }
 
 @media only screen and (max-width:800px){
-    .registration-list img{
+    /* .registration-list img{
         height: 130px;
     }
     .registration-page{
@@ -659,9 +674,27 @@ media queries for smaller screen size
     }
     .registration-list .reg-price{
         font-size: 1.8rem;
+    } */
+    .reg-video{
+        display: none;
+    }
+    .registration-page-cards{
+        justify-content: space-around;
+        gap: 1rem;
+    }
+    .registration-list{
+        max-width: 30%;
     }
 }
-
+@media only screen and (max-width:700px){
+    .registration-list{
+        max-width: 40%;
+    }
+    .registration-sticky-container iframe{
+        width: 160px;
+        height: 100px;
+    }
+}
 @media only screen and (max-width:650px) {
     .hero-content h1 {
         display: inline;
@@ -728,7 +761,11 @@ media queries for smaller screen size
         height: 200px;
     }
 }
-
+@media only screen and (max-width:600px){
+    .registration-list{
+        max-width: 60%;
+    }
+}
 @media only screen and (max-width:450px){
     .registration-list{
         max-width: 70%;
@@ -762,9 +799,6 @@ media queries for smaller screen size
         max-width: 90%;
         font-size: .8rem;
     }
-    /* .registration-list .reg-price{
-        font-size: 1.3rem;
-    } */
     .registration-list img{
         height: 150px;
     }
