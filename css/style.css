@@ -521,15 +521,7 @@ registration page styling
     gap: 1rem;
     justify-content: space-between;
 }
-/*
-.registration-page-videos{
-    display: inline-block;
-    z-index: 1;
-}
-.registration-sticky-container{
-    position: sticky;
-    top: 9rem;
-} */
+
 .registration-list{
     max-width: 22%;
     text-align: center;
@@ -562,11 +554,32 @@ registration page styling
     padding: 0 .4rem;
     text-align: justify;
 }
-/* .registration-sticky-container iframe{
-    width: 260px;
-    height: 120px;
+
+
+
+/* -------------- */
+
+.registration-sticky-container iframe{
+    width: 300px;
+    height: 160px;
     border: none;
-} */
+}
+
+.registration-page-videos{
+    display: inline-block;
+    z-index: 1;
+}
+.registration-sticky-container{
+    position: sticky;
+    top: 9rem;
+}
+.dsc-cards .registration-list{
+    max-width: 25%;   
+}
+.dsc-cards{
+    row-gap: 3rem;
+    justify-content: space-around;
+}
 
 
 /*--------------------------------
@@ -587,6 +600,13 @@ media queries for smaller screen size
 
     html {
         font-size: 13px;
+    }
+    .registration-sticky-container iframe{
+        width: 260px;
+        height: 120px;
+    }
+    .dsc-cards .registration-list{
+        max-width: 27%;   
     }
 }
 
@@ -663,6 +683,13 @@ media queries for smaller screen size
         width: 200px;
         height: 110px;
     } */
+    .registration-sticky-container iframe{
+        width: 230px;
+        height: 130px;
+    }
+    .dsc-cards .registration-list{
+        max-width: 30%;   
+    }
 }
 
 @media only screen and (max-width:800px){
@@ -675,7 +702,7 @@ media queries for smaller screen size
     .registration-list .reg-price{
         font-size: 1.8rem;
     } */
-    .reg-video{
+    .reg-video,.registration-page-videos{
         display: none;
     }
     .registration-page-cards{
@@ -687,7 +714,7 @@ media queries for smaller screen size
     }
 }
 @media only screen and (max-width:700px){
-    .registration-list{
+    .registration-list,.dsc-cards .registration-list{
         max-width: 40%;
     }
     .registration-sticky-container iframe{
@@ -719,7 +746,7 @@ media queries for smaller screen size
     .registration-page{
         gap: 1rem;
     }
-    .registration-list{
+    .registration-list,.dsc-cards .registration-list{
         max-width: 40%;
     }
 }
@@ -762,21 +789,19 @@ media queries for smaller screen size
     }
 }
 @media only screen and (max-width:600px){
-    .registration-list{
+    .registration-list,.dsc-cards .registration-list{
         max-width: 60%;
     }
 }
 @media only screen and (max-width:450px){
-    .registration-list{
+    .registration-list,.dsc-cards .registration-list{
         max-width: 70%;
-    }
-    .registration-list img{
-        height: 200px;
-    }
-    .registration-list{
         font-size: .8rem;
     }
-    .registration-list .reg-price{
+    .registration-list img,.dsc-cards .registration-list img{
+        height: 200px;
+    }
+    .registration-list .reg-price,.dsc-cards .registration-list .reg-price{
         font-size: 1.5rem;
     }
 }
@@ -795,11 +820,11 @@ media queries for smaller screen size
     .hero .hero-content h1{
         font-size: 1.8rem;
     }
-    .registration-list{
+    .registration-list,.dsc-cards .registration-list{
         max-width: 90%;
         font-size: .8rem;
     }
-    .registration-list img{
+    .registration-list img,.dsc-cards .registration-list img{
         height: 150px;
     }
 }
