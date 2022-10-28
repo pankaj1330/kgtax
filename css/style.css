@@ -95,7 +95,7 @@ for big screen
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1800px;
+    max-width: 1300px;
     margin: auto;
 }
 
@@ -169,7 +169,7 @@ hero section after navbar
     justify-content: space-around;
     align-items: center;
     padding: 0 .5rem;
-    max-width: 1800px;
+    max-width: 1400px;
     margin: auto;
     margin-top: 10rem;
     min-height: 40vh;
@@ -337,7 +337,7 @@ why our customer loves us
 
 .why-we{
     padding: 0 .5rem;
-    max-width: 1800px;
+    max-width: 1400px;
     margin: auto;
 }
 .why-count {
@@ -513,7 +513,7 @@ registration page styling
     padding: 0 .5rem;
     margin: auto;
     margin-top: 9rem;
-    max-width: 1800px;
+    max-width: 1300px;
 }
 .registration-page-cards{
     display: flex;
@@ -522,6 +522,7 @@ registration page styling
     justify-content: space-between;
 }
 
+
 .registration-list{
     max-width: 22%;
     text-align: center;
@@ -529,11 +530,12 @@ registration page styling
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
     box-shadow: 0 0 2px grey;
+    padding-bottom: 4rem;
+    position: relative;
 }
 .registration-list img{
     width: 100%;
     height: 230px;
-    /* border: none; */
 }
 .registration-list iframe{
     border: none;
@@ -547,14 +549,21 @@ registration page styling
 .registration-list .reg-price{
     font-size: 2rem;
     color: red;
-    margin: 2rem 0;
+    /* margin: 2rem 0; */
+    position: absolute;
+    bottom: .3rem;
 }
 .registration-list h1{
-    margin: 1.2rem 0;
+    margin: .3rem 0;
     padding: 0 .4rem;
     text-align: justify;
+    font-weight: 500;
+    font-size: 1.2rem;
 }
-
+.reg-heading{
+    color: black;
+    font-weight: bolder;
+}
 
 
 /* -------------- */
@@ -586,7 +595,11 @@ registration page styling
 media queries for smaller screen size 
 ---------------------------------- */
 
-
+@media only screen and (min-width:1500px){
+    .navigation-bar{
+        font-size: .9rem;
+    }
+}
 
 @media only screen and (max-width:1550px) {
     html {
