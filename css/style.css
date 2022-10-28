@@ -564,7 +564,10 @@ registration page styling
     color: black;
     font-weight: bolder;
 }
-
+.registration-list:hover{
+    transform: scale(1.05);
+    transition: all 1s;
+}
 
 /* -------------- */
 
