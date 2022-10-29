@@ -7,13 +7,13 @@
 }
 
 html {
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 550;
 }
 
 body {
-    background-color: rgb(255, 255, 247);
+    background-color: #f7f9fb;
     min-height: 100vh;
     color: #252525;
 }
@@ -53,10 +53,10 @@ for big screen
 
 
 .navigation-bar {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
     letter-spacing: 1px;
-    border-bottom: 2px solid grey;
+    border-bottom: 1px solid grey;
     position: fixed;
     width: 100%;
     padding: 0rem 2rem;
@@ -70,7 +70,7 @@ for big screen
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1300px;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -110,7 +110,7 @@ for big screen
     background-color: #ff9933;
     padding: .3rem .4rem;
     border-radius: .6rem;
-    line-height: 2.5rem;
+    line-height: 2rem;
     font-size: .9rem;
     margin: 0;
     transition: all .4s;
@@ -144,7 +144,7 @@ hero section after navbar
     justify-content: space-around;
     align-items: center;
     padding: 0 .5rem;
-    max-width: 1400px;
+    max-width: 1250px;
     margin: auto;
     margin-top: 10rem;
     min-height: 40vh;
@@ -163,7 +163,6 @@ hero section after navbar
 
 .hero-content2 {
     width: 400px;
-    letter-spacing: 1px;
     line-height: 1.5rem;
     font-size: 1.2rem;
 }
@@ -528,6 +527,7 @@ registration page styling
     color: red;
     position: absolute;
     bottom: .3rem;
+    font-weight: bolder;
 }
 .registration-list h1{
     margin: .3rem 0;
@@ -565,7 +565,7 @@ registration page styling
     top: 9rem;
 }
 .dsc-cards .registration-list{
-    max-width: 25%;   
+    max-width: 28%;   
 }
 .dsc-cards{
     row-gap: 3rem;
