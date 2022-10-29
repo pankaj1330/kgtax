@@ -36,43 +36,12 @@ slide show
     height: 100%;
     width: 100%;
     transition: all 1s;
-    /* background-image: url('../images/slide1.jpeg'); */
-    /* background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    animation: slideshow 30s linear infinite; */
-}
-/*
-.slide-show:hover .slide-items{
-    animation-play-state: paused;
-    cursor: pointer;
 }
 
-@keyframes slideshow{
-    0% ,7%{
-        background-image: url('../images/slide1.jpeg');
-    }
-    15%,21%{
-        background-image: url('../images/slide2.jpeg');
-    }
-    30%,35%{
-        background-image: url('../images/slide3.jpeg');
-    }
-    45%,49%{
-        background-image: url('../images/slide4.jpeg');
-    }
-    60%,63%{
-        background-image: url('../images/slide5.jpeg');
-    }
-    75%,77%{
-        background-image: url('../images/slide6.jpeg');
-    }
-    90%,100%{
-        background-image: url('../images/slide7.jpeg');
-    }
-} */
 
 /* end of slide show  */
+
+
 
 /* ---------------------- 
 navbar design 
@@ -88,14 +57,14 @@ for big screen
     border-bottom: 2px solid grey;
     position: fixed;
     width: 100%;
-    padding: .3rem 2rem;
+    padding: 0rem 2rem;
     background-color: white;
     top: 0;
     font-weight: bold;
     z-index: 2;
 }
 
-.navbar {
+.navigation-bar .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -306,13 +275,13 @@ final returns
 }
 
 .detail h1 {
-    font-size: 2.7rem;
+    font-size: 3rem;
     background-color: rgb(226, 238, 253);
     display: inline;
     border-radius: 1.5rem/1rem;
-    padding: 0rem 1.3rem;
+    padding: 1rem 1.3rem;
     font-weight: bold;
-    font-weight: 600;
+    font-weight: 700;
     color: black;
 }
 
@@ -495,7 +464,7 @@ why our customer loves us
 
 
 
-#whatsapp {
+#whatsapp{
     position: fixed;
     bottom: 2rem;
     right: 2rem;
@@ -567,11 +536,14 @@ registration page styling
 }
 .reg-heading{
     color: black;
-    font-weight: bolder;
+    font-weight: 800 !important;
 }
 .registration-list:hover{
     transform: scale(1.05);
     transition: all 1s;
+}
+.reg-video:hover{
+    transform: none;
 }
 
 /* -------------- */
@@ -697,13 +669,6 @@ media queries for smaller screen size
     .need{
         width: 20%;
     }
-    /* .registration-list img{
-        height: 160px;
-    }
-    .registration-sticky-container iframe{
-        width: 200px;
-        height: 110px;
-    } */
     .registration-sticky-container iframe{
         width: 230px;
         height: 130px;
@@ -714,15 +679,6 @@ media queries for smaller screen size
 }
 
 @media only screen and (max-width:800px){
-    /* .registration-list img{
-        height: 130px;
-    }
-    .registration-page{
-        font-size: .8rem;
-    }
-    .registration-list .reg-price{
-        font-size: 1.8rem;
-    } */
     .reg-video,.registration-page-videos{
         display: none;
     }
