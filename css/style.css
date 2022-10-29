@@ -18,6 +18,13 @@ body {
     color: #252525;
 }
 
+.logo-link{
+    text-decoration: none;
+    color: black;
+}
+.logo-link:hover{
+    color: black;
+}
 
 
 /* -------------
@@ -99,7 +106,7 @@ for big screen
 .fa-xmark {
     position: absolute;
     padding: .3rem;
-    top: 1.5rem;
+    top: .8rem;
     right: 1.2rem;
     font-size: 1.5rem;
     visibility: hidden;
@@ -465,14 +472,14 @@ why our customer loves us
 
 
 
-#whatsapp{
+#whatsapp i{
     position: fixed;
     bottom: 2rem;
     right: 2rem;
     font-size: 2.5rem;
     color: white;
     background-color: green;
-    padding: 0rem .4rem;
+    padding: .2rem .3rem;
     border-radius: .4rem;
     z-index: 2;
 }
@@ -540,6 +547,11 @@ registration page styling
     color: black;
     font-weight: 800 !important;
 }
+.reg-video h1{
+    font-size: 1.8rem;
+    font-weight: bolder;
+    margin-top: 5rem;
+}
 .registration-list:hover{
     transform: scale(1.05);
     transition: all 1s;
@@ -570,6 +582,12 @@ registration page styling
 .dsc-cards{
     row-gap: 3rem;
     justify-content: space-around;
+}
+.registration-sticky-container h1{
+    font-size: 1.8rem;
+    color: blue;
+    font-weight: bolder;
+    margin-top: 5rem;
 }
 
 
