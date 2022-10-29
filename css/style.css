@@ -106,7 +106,7 @@ for big screen
 .fa-xmark {
     position: absolute;
     padding: .3rem;
-    top: .8rem;
+    top: .7rem;
     right: 1.2rem;
     font-size: 1.5rem;
     visibility: hidden;
@@ -672,6 +672,9 @@ media queries for smaller screen size
         transition: all .4s;
         overflow: scroll;
         align-items: flex-start;
+    }
+    .navigation-bar{
+        padding-top: .3rem;
     }
     
     .slide-show .carousel-inner .carousel-item img,#carouselExampleDark{
