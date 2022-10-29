@@ -24,17 +24,19 @@ body {
 slide show
 -----------------  */
 
-.slide-show{
+.slide-show,#carouselExampleDark{
     height: 280px;
     width: 460px;
-    display: flex;
-    overflow: hidden;
     cursor: pointer;
 }
+.slide-index{
+    position: absolute;
+    top: 22rem;
+}
 
-.slide-show img{
-    height: 100%;
-    width: 100%;
+.slide-show .carousel-inner .carousel-item img{
+    height: 280px;
+    width: 460px;
     transition: all 1s;
 }
 
@@ -493,7 +495,7 @@ registration page styling
 .registration-page-cards{
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2rem;
     justify-content: space-between;
 }
 
@@ -579,11 +581,17 @@ media queries for smaller screen size
     .navigation-bar{
         font-size: .9rem;
     }
+    .slide-index{
+        top: 18rem;
+    }
 }
 
 @media only screen and (max-width:1550px) {
     html {
         font-size: 14px;
+    }
+    .slide-index{
+        top: 20rem;
     }
 }
 @media only screen and (max-width:1250px) {
@@ -601,6 +609,9 @@ media queries for smaller screen size
     .dsc-cards .registration-list{
         max-width: 27%;   
     }
+    .slide-index{
+        top: 22rem;
+    }
 }
 
 @media only screen and (max-width:1150px) {
@@ -609,7 +620,6 @@ media queries for smaller screen size
     }
 
     .hero-content2 {
-        margin-top: 4rem;
         width: 90vw;
     }
     .navbar {
@@ -646,9 +656,10 @@ media queries for smaller screen size
         align-items: flex-start;
     }
     
-    .slide-show{
-        height: 200px;
-        width: 380px;
+    .slide-show .carousel-inner .carousel-item img,#carouselExampleDark{
+        height: 250px;
+        max-width: 360px;
+        margin: auto;
     }
     
     .fa-bars,
@@ -675,6 +686,9 @@ media queries for smaller screen size
     }
     .dsc-cards .registration-list{
         max-width: 30%;   
+    }
+    .slide-index{
+        top: 19rem;
     }
 }
 
@@ -712,9 +726,9 @@ media queries for smaller screen size
         margin-bottom: 1rem;
     }
 
-    .hero .slide-show{
+    .hero .slide-show .carousel-inner .carousel-item img{
         width: 90vw;
-        max-height: 180px;
+        max-height: 220px;
     }
 
     .footer {
@@ -725,6 +739,9 @@ media queries for smaller screen size
     }
     .registration-list,.dsc-cards .registration-list{
         max-width: 40%;
+    }
+    .slide-index{
+        top: 17rem;
     }
 }
 
@@ -759,9 +776,9 @@ media queries for smaller screen size
     .needs{
         gap: 1rem;
     }
-    .slide-show{
+    .slide-show .carousel-inner .carousel-item img,#carouselExampleDark{
         margin-top: 1rem;
-        width: 80vw;
+        max-width: 80vw;
         height: 200px;
     }
 }
