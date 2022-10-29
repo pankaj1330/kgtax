@@ -27,18 +27,22 @@ slide show
 .slide-show{
     height: 280px;
     width: 460px;
+    display: flex;
+    overflow: hidden;
     cursor: pointer;
 }
-.slide-items{
+
+.slide-show img{
     height: 100%;
     width: 100%;
-    background-image: url('../images/slide1.jpeg');
-    background-size: 100% 100%;
+    transition: all 1s;
+    /* background-image: url('../images/slide1.jpeg'); */
+    /* background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
-    animation: slideshow 30s linear infinite;
+    animation: slideshow 30s linear infinite; */
 }
-
+/*
 .slide-show:hover .slide-items{
     animation-play-state: paused;
     cursor: pointer;
@@ -66,7 +70,7 @@ slide show
     90%,100%{
         background-image: url('../images/slide7.jpeg');
     }
-}
+} */
 
 /* end of slide show  */
 
@@ -100,7 +104,7 @@ for big screen
 }
 
 .navbar .logo h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bolder;
 }
 
@@ -136,7 +140,7 @@ for big screen
     padding: .3rem .4rem;
     border-radius: .6rem;
     line-height: 2.5rem;
-    font-size: 1rem;
+    font-size: .9rem;
     margin: 0;
     transition: all .4s;
 }
@@ -326,8 +330,10 @@ final returns
     font-size: 1.8rem;
     margin-right: .3rem;
 }
-
-
+.detail:hover{
+    transform: scale(1.05);
+    transition: all .5s;
+}
 
 
 /*---------------------
@@ -549,7 +555,6 @@ registration page styling
 .registration-list .reg-price{
     font-size: 2rem;
     color: red;
-    /* margin: 2rem 0; */
     position: absolute;
     bottom: .3rem;
 }
