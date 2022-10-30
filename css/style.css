@@ -27,25 +27,60 @@ body {
 }
 
 
-/* -------------
-slide show
------------------  */
 
-.slide-show,#carouselExampleDark{
+.slide-show{
     height: 280px;
     width: 460px;
     cursor: pointer;
 }
-.slide-index{
-    position: absolute;
-    top: 22rem;
+.slide-items{
+    /* background-color: red; */
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/slide1.jpeg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: slideshow 30s linear infinite;
+    /* animation-timing-function: ease; */
 }
 
-.slide-show .carousel-inner .carousel-item img{
-    height: 280px;
-    width: 460px;
-    transition: all 1s;
+.slide-show:hover .slide-items{
+    animation-play-state: paused;
+    cursor: pointer;
 }
+
+@keyframes slideshow{
+    0% ,7%{
+        background-image: url('../images/slide1.jpeg');
+    }
+    15%,21%{
+        background-image: url('../images/slide2.jpeg');
+    }
+    30%,35%{
+        background-image: url('../images/slide3.jpeg');
+    }
+    45%,49%{
+        background-image: url('../images/slide4.jpeg');
+    }
+    60%,63%{
+        background-image: url('../images/slide5.jpeg');
+    }
+    75%,77%{
+        background-image: url('../images/slide6.jpeg');
+    }
+    90%,100%{
+        background-image: url('../images/slide7.jpeg');
+    }
+}
+
+/* end of slide show  */
+
+
+
+/* -------------
+slide show
+-----------------  */
 
 
 /* end of slide show  */
@@ -677,7 +712,7 @@ media queries for smaller screen size
         padding-top: .3rem;
     }
     
-    .slide-show .carousel-inner .carousel-item img,#carouselExampleDark{
+    .slide-show{
         height: 250px;
         max-width: 360px;
         margin: auto;
@@ -747,7 +782,7 @@ media queries for smaller screen size
         margin-bottom: 1rem;
     }
 
-    .hero .slide-show .carousel-inner .carousel-item img{
+    .hero .slide-show {
         width: 90vw;
         max-height: 220px;
     }
@@ -797,7 +832,7 @@ media queries for smaller screen size
     .needs{
         gap: 1rem;
     }
-    .slide-show .carousel-inner .carousel-item img,#carouselExampleDark{
+    .slide-show {
         margin-top: 1rem;
         max-width: 80vw;
         height: 200px;
