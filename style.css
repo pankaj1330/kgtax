@@ -7,7 +7,7 @@
 }
 
 html {
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 550;
 }
@@ -78,7 +78,7 @@ for big screen
 }
 
 .navbar .logo h2 {
-    font-size: 2.5rem;
+    font-size: 2.6rem;
     font-weight: bolder;
 }
 
@@ -87,6 +87,8 @@ for big screen
     gap: 2rem;
     z-index: 3;
     align-items: center;
+    font-size: 1.1rem;
+    font-weight: lighter;
 }
 
 .navbar .navlist .navitem a {
@@ -211,6 +213,7 @@ hero section after navbar
     text-align: center;
 }
 
+
 .disc {
     text-align: justify;
 }
@@ -224,7 +227,6 @@ hero section after navbar
     margin-bottom: 8px;
     cursor: pointer;
     border-radius: 10px;
-    font-weight: 600;
 }
 
 .tabs:hover {
@@ -251,7 +253,7 @@ final returns
     font-size: 1.1rem;
     margin-top: 2rem;
     line-height: 1.5rem;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .details {
