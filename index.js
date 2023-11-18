@@ -43,25 +43,25 @@ const details = [{
     {
         inside: "dsc",
         title: "DSC Class  3 Signing -  (No Hidden Charges)",
-        price: "<sup>&#8377</sup>499",
+        price: "<sup>&#8377</sup>799",
         disc: "A Class 3 DSC is issued by a Certifying Authoriry (CA) after thorough verification of the user's identity."
     },
     {
         inside: "dsc",
         title: "DSC Class  3 Signing with Token (No Hidden Charges)",
-        price: "<sup>&#8377</sup>799",
+        price: "<sup>&#8377</sup>1099",
         disc: "Feel free to Call or Whatsapp us and Our Experts will follow up and ensure you to get your DSC at the earliest."
     },
     {
         inside: "dsc",
         title: "DSC Class  3 Combo (Sign+Encryption) with USB Token (No Hidden Charges)",
-        price: "<sup>&#8377</sup>1299",
+        price: "<sup>&#8377</sup>1799",
         disc: "The Class 3 Combo DSC (Signature+Encryption) is the highest level of certificate in India. Combo Provides higher security to online authorization."
     },
     {
         inside: "dsc",
         title: "DSC for E-TENDER with USB Token (No Hidden Charges)",
-        price: "<sup>&#8377</sup>1299",
+        price: "<sup>&#8377</sup>1799",
         disc: "Any Organisation that is looking forward to applying  any Government E-Tender, needs to have a Class 3 Digital Signature Certificate Registered in the name of a representative who is authorised to submit online offers for E-Tendering Applications."
     },
     {
