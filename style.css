@@ -13,8 +13,8 @@ html {
 }
 
 body {
-    /* background-color: #f7f9fb; */
-    background-color: #fdf2f2;
+    /* background-color: #fdf2f2; */
+    background-color: #fff6f6;
     min-height: 100vh;
     color: #252525;
 }
@@ -59,7 +59,7 @@ for big screen
     font-size: 1.2rem;
     margin-bottom: 1rem;
     letter-spacing: 1px;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid rgb(230, 230, 230);
     position: fixed;
     width: 100%;
     padding: 0.5rem 2rem;
@@ -158,8 +158,7 @@ hero section after navbar
 .hero .hero-content h1 {
     font-size: 3.5rem;
     font-weight: 600;
-    font-family: sans-serif;
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
 }
 
 .hero-content2 {
@@ -489,7 +488,8 @@ registration page styling
 }
 
 .card {
-    max-width: 22%;
+    /* max-width: 22%; */
+    max-width: calc(25% - 1.5rem);
     text-align: center;
     color: blue;
     background-color: rgb(255, 255, 255);
@@ -504,12 +504,26 @@ registration page styling
     height: 230px;
 }
 
-.card iframe {
+.card iframe,.card-header iframe {
     border: none;
     width: 100%;
     height: 300px;
 }
-.cards .reg-video {
+.card-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+}
+.card-header .card-img{
+    max-width: 60%;
+}
+.card-img img {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+}
+.cards .reg-video,.card-header .reg-video2{
     border: none;
     background-color: transparent;
     box-shadow: none;
@@ -532,12 +546,16 @@ registration page styling
     font-weight: 500;
 }
 
-.card h1 {
+.card h1,.card p {
     margin: .3rem 0;
     padding: 0 .4rem;
     text-align: justify;
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+}
+.card h1{
+    font-weight: bold;
+    font-size: 1.4rem;
 }
 
 .reg-heading {
@@ -545,7 +563,7 @@ registration page styling
     font-weight: 800 !important;
 }
 
-.reg-video h1 {
+.reg-video h1,.reg-video2 h1 {
     font-size: 1.8rem;
     font-weight: bolder;
     margin-top: 5rem;
@@ -556,47 +574,11 @@ registration page styling
     transition: all .3s;
 }
 
-.reg-video:hover {
+.reg-video:hover,.reg-video2:hover {
     transform: none;
 }
 
-/* -------------- */
-
-.registration-sticky-container iframe {
-    width: 500px;
-    height: 300px;
-    border: none;
-}
-
-.registration-page-videos {
-    display: inline-block;
-    z-index: 1;
-}
-
-.registration-sticky-container {
-    position: sticky;
-    top: 9rem;
-}
-
-.dsc-cards .card {
-    max-width: 35%;
-}
-
-.dsc-cards {
-    row-gap: 3rem;
-    justify-content:space-evenly;
-}
-
-.registration-sticky-container h1 {
-    font-size: 1.8rem;
-    color: blue;
-    font-weight: bolder;
-    margin-top: 5rem;
-}
-
-/* income page , service page */
-
-.income-cards,.service-cards{
+.income-cards{
     justify-content: normal;
 }
 
@@ -634,9 +616,6 @@ media queries for smaller screen size
         width: 400px;
         height: 250px;
     }
-    .dsc-cards .card {
-        max-width: 38%;
-    }
     .slide-index {
         top: 22rem;
     }
@@ -664,7 +643,7 @@ media queries for smaller screen size
     .need h1 {
         font-size: 1rem;
     }
-    .card iframe {
+    .card iframe,.card-header iframe {
         height: 250px;
     }
 }
@@ -710,18 +689,10 @@ media queries for smaller screen size
     .need {
         width: 20%;
     }
-    .registration-sticky-container iframe {
-        width: 300px;
-        height: 220px;
-    }
-    /*
-    .dsc-cards .card {
-        max-width: 30%;
-    } */
     .slide-index {
         top: 19rem;
     }
-    .card iframe {
+    .card iframe,.card-header iframe {
         height: 200px;
     }
 }
@@ -741,13 +712,8 @@ media queries for smaller screen size
 }
 
 @media only screen and (max-width:700px) {
-    .card,
-    .dsc-cards .card {
+    .card{
         max-width: 40%;
-    }
-    .registration-sticky-container iframe {
-        width: 160px;
-        height: 100px;
     }
 }
 
@@ -771,8 +737,7 @@ media queries for smaller screen size
     .main-section {
         gap: 1rem;
     }
-    .card,
-    .dsc-cards .card {
+    .card{
         max-width: 40%;
     }
     .slide-index {
@@ -818,24 +783,32 @@ media queries for smaller screen size
 }
 
 @media only screen and (max-width:600px) {
-    .card,
-    .dsc-cards .card {
+    /* .reg-video2,.card-header {
+        display: none;
+    } */
+    .card-header .card-img{
+        max-width: 96%;
+    }
+    .card-img img {
+        height: 240px;
+    }
+    .card{
         max-width: 60%;
+    }
+    .details .detail {
+        width: 280px;
     }
 }
 
 @media only screen and (max-width:450px) {
-    .card,
-    .dsc-cards .card {
+    .card{
         max-width: 70%;
         font-size: .8rem;
     }
-    .card img,
-    .dsc-cards .card img {
+    .card img{
         height: 200px;
     }
-    .card .reg-price,
-    .dsc-cards .card .reg-price {
+    .card .reg-price{
         font-size: 1.5rem;
     }
 }
@@ -853,13 +826,11 @@ media queries for smaller screen size
     .hero .hero-content h1 {
         font-size: 1.8rem;
     }
-    .card,
-    .dsc-cards .card {
+    .card {
         max-width: 90%;
         font-size: .8rem;
     }
-    .card img,
-    .dsc-cards .card img {
+    .card img {
         height: 150px;
     }
 }
